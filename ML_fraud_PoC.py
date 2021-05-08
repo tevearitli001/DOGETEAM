@@ -9,7 +9,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 
-data = np.loadtxt('output.csv', delimiter=",", dtype=np.float32, skiprows=1)
+data = np.loadtxt('ML_output.csv', delimiter=",", dtype=np.float32, skiprows=1)
 
 input_params = 5
 hidder_layer = 15
