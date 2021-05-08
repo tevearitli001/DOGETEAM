@@ -33,8 +33,13 @@ def fidelity(hhl, ref):
     print("Fidelity:\t\t %f" % fidelity)
 
 
-matrix = [[1, -(1/3)], [-(1/3), 1]] # [[1, -1/3], [-1/3, 1]]
-vector = [1, 0] # [1, 0]
+matrix = [[0.246,  3.2],
+        [3.2,  0]]
+
+vector = [-0.5,  0.4]
+
+# matrix = [[1, -(1/3)], [-(1/3), 1]] # [[1, -1/3], [-1/3, 1]]
+# vector = [1, 0] # [1, 0]
 
 orig_size = len(vector)
 matrix, vector, truncate_powerdim, truncate_hermitian = HHL.matrix_resize(matrix, vector)
