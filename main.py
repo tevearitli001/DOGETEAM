@@ -64,5 +64,3 @@ fidelity(result['solution'], result_ref['solution'])
 print("circuit_width:\t", result['circuit_info']['width'])
 print("circuit_depth:\t", result['circuit_info']['depth'])
 print("CNOT gates:\t", result['circuit_info']['operations']['cx'])
-
-qobj = assemble(qcs, shots=10)
